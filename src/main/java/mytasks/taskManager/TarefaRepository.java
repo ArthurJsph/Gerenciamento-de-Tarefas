@@ -164,5 +164,8 @@ public class TarefaRepository implements JpaRepository{
     public Object findBy(Example example, Function queryFunction) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-    
+
+
 }
+    
+

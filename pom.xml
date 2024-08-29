@@ -28,6 +28,7 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
+                 <start-class>mytasks.taskManager.TaskManagerApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
