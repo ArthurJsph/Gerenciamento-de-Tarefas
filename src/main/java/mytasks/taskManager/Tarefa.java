@@ -15,11 +15,15 @@ public class Tarefa {
     private String titulo;
     private String descricao;
     private Date dataDeConclusao;
-    private Boolean concluida;
+    private String status;
 
     public Tarefa(String descricao, Boolean concluida) {
         this.descricao = descricao;
-        this.concluida = concluida;
+        
+    }
+
+    public Tarefa(String status) {
+        this.status = status;
     }
     
     public Tarefa(){}
@@ -56,12 +60,14 @@ public class Tarefa {
         this.dataDeConclusao = dataDeConclusao;
     }
 
-    public Boolean getConcluida() {
-        return concluida;
+    public String getStatus() {
+        return status;
     }
 
-    public void setConcluida(Boolean concluida) {
-        this.concluida = concluida;
+    public void setStatus(String status) {
+        this.status = status;
     }
+
+   
     
 }
