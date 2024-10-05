@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/tarefas")
+@RequestMapping("/tarefas")
 public class TarefaController {
 
     @Autowired
@@ -25,7 +25,8 @@ public class TarefaController {
         Tarefa novaTarefa = tarefaService.salvarTarefa(tarefa);
         return ResponseEntity.ok(novaTarefa);
     }
-
+    
+    
     @GetMapping
     public ResponseEntity<List<Tarefa>> listarTodasTarefas() {
         List<Tarefa> tarefas = tarefaService.listarTodasTarefas();
